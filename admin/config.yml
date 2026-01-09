@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: maxireban-bot/funvLORMNU
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "home"
+    label: "Página Principal"
+    file: "content/home.json"
+    format: "json"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "text" }
