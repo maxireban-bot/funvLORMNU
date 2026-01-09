@@ -3,6 +3,9 @@ backend:
   repo: maxireban-bot/funvLORMNU
   branch: main
 
+site_url: https://maxireban-bot.github.io/funvLORMNU
+base_url: /funvLORMNU
+
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
