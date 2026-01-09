@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funvalor - Fundación Valores y Raíces</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1f4e79;
+        }
+        
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #1f4e79;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/hero-funvalor-team.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 0 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: #1f4e79;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #153a5a;
+        }
+        
+        .btn-secondary {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #c82333;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        section h2 {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 50px;
+            font-family: 'Poppins', sans-serif;
+            color: #1f4e79;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #1f4e79;
+            margin-bottom: 10px;
+        }
+        
+        .stat-text {
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .program-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        
+        .program-card h3 {
+            color: #1f4e79;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        .program-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .bg-light {
+            background: #f8f9fa;
+        }
+        
+        footer {
+            background: #1f4e79;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 10px 0;
+        }
+        
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Funvalor</div>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Sobre Nosotros</a>
+                <a href="#programas">Programas</a>
+                <a href="#donar">Donar</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container" style="text-align: center;">
+            <h1>Donde los Valores son tus Raíces</h1>
+            <p>14 años transformando vidas a través del deporte, la cultura y la inclusión.</p>
+            <button class="btn btn-primary">Donar Ahora</button>
+            <button class="btn btn-secondary">Quiero Ayudar</button>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">14</div>
+                    <div class="stat-text">Años transformando vidas desde 2012</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-text">Niños en Funvalor Fútbol</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">9000+</div>
+                    <div class="stat-text">Libros en nuestra biblioteca</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">14</div>
+                    <div class="stat-text">Jóvenes en Italia con oportunidades</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros">
+        <div class="container">
+            <h2>Nuestra Misión</h2>
+            <p style="text-align: center; font-size: 18px; max-width: 800px; margin: 0 auto 40px; color: #666;">
+                Luchar contra la pobreza y promover la equidad e inclusión a través de la participación ciudadana activa, utilizando el deporte, la cultura y la educación como herramientas de transformación social.
+            </p>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="bg-light" id="programas">
+        <div class="container">
+            <h2>Nuestros Programas</h2>
+            <div class="programs">
+                <div class="program-card">
+                    <h3>🎓 Educación</h3>
+                    <p>Clases de apoyo escolar, inglés y matemáticas. Biblioteca con más de 9000 libros para la comunidad.</p>
+                </div>
+                <div class="program-card">
+                    <h3>⚽ Deporte</h3>
+                    <p>Funvalor Fútbol con escuelita oficial en Diego de Rojas. 50+ niños participando activamente.</p>
+                </div>
+                <div class="program-card">
+                    <h3>🌍 Inclusión</h3>
+                    <p>Primavera Distinta e Integradora. Deportes adaptados y eventos inclusivos durante septiembre.</p>
+                </div>
+                <div class="program-card">
+                    <h3>🤝 Solidaridad</h3>
+                    <p>Colecta de ropa, comedor comunitario y apoyo a familias en situación de vulnerabilidad.</p>
+                </div>
+                <div class="program-card">
+                    <h3>🏗️ Infraestructura</h3>
+                    <p>Construcción de salón de usos múltiples en nuestro predio. Sede social en Soconcho 3240.</p>
+                </div>
+                <div class="program-card">
+                    <h3>🌟 Oportunidades</h3>
+                    <p>Convenio con equipos del ascenso italiano. 14 jóvenes jugando en Calabria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donar">
+        <div class="container">
+            <h2>Sé Parte del Cambio</h2>
+            <p style="text-align: center; font-size: 18px; max-width: 800px; margin: 0 auto 40px; color: #666;">
+                Existen múltiples formas de apoyar a Funvalor. Elige la que mejor se adapte a ti.
+            </p>
+            <div class="programs">
+                <div class="program-card">
+                    <h3>Apoyo Básico</h3>
+                    <p>Contribuye con lo que puedas. Cada aporte cuenta para fortalecer nuestros programas comunitarios.</p>
+                    <button class="btn btn-primary" style="margin-top: 20px; width: 100%;">Seleccionar</button>
+                </div>
+                <div class="program-card" style="border: 2px solid #1f4e79;">
+                    <h3>Apoyo Integral ⭐</h3>
+                    <p>Compromiso continuo con nuestra misión. Impacta directamente en múltiples programas.</p>
+                    <button class="btn btn-primary" style="margin-top: 20px; width: 100%;">Seleccionar</button>
+                </div>
+                <div class="program-card">
+                    <h3>Apoyo Completo</h3>
+                    <p>Máximo impacto. Sé parte de las decisiones estratégicas de la fundación.</p>
+                    <button class="btn btn-secondary" style="margin-top: 20px; width: 100%;">Seleccionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-light" id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <p style="font-size: 18px; margin: 20px 0;">
+                    <strong>Teléfono:</strong> <a href="tel:+5493516099951">+54 9 351 609-9951</a>
+                </p>
+                <p style="font-size: 18px; margin: 20px 0;">
+                    <strong>Email:</strong> <a href="mailto:fundacionvaloresyraices@hotmail.com">fundacionvaloresyraices@hotmail.com</a>
+                </p>
+                <p style="font-size: 18px; margin: 20px 0;">
+                    <strong>Dirección:</strong> Soconcho 3240, Córdoba, Argentina
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Fundación Valores y Raíces (Funvalor). Todos los derechos reservados.</p>
+            <p>Transformando vidas a través del deporte, la cultura y la inclusión.</p>
+        </div>
+    </footer>
+</body>
+</html>
